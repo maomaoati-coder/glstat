@@ -14,8 +14,6 @@
 <span style="color:red; font-size:1.2em;">
 ⚠️ 绝对禁止跳步执行！</span>
 
-<span style="color:red;">截图中的报错是因为你没有安装 Python 和 Git。
-
 请务必【一行一行】复制以下指令，确保终端不再提示 "not installed" 后再继续！</span>
 
 </span>
