@@ -18,6 +18,9 @@
 
 请务必【一行一行】复制以下指令，确保终端不再提示 "not installed" 后再继续！</span>
 
+</span>
+<span style="color:red;">注意：演示模式仅输出文本报告。如需生成相册图片，必须放入你自己的真实 glstat 数据！</span>
+
 ## 🛠️ 傻瓜式实操流程 (Step-by-Step SOP)
 
 如果你是第一次使用，请完全按照以下指令一行一行复制执行：
@@ -67,6 +70,13 @@ python scripts/check.py
    cp diagnosis_plot.png /storage/emulated/0/Pictures/
    
    ```
+**【关键】放入你的仿真数据**
+
+​<span style="color:red;">只有执行了这一步，相册里才会出现图片：</span>
+
+​请将你 LS-DYNA 跑出来的 glstat 文件重命名为 glstat（不要后缀）。
+​
+将该文件移动或上传到 Termux 里的 glstat 文件夹根目录。
 
 #### 🆘 如果图片无法保存到相册？
 如果在执行 cp 命令时提示 No such file or directory，请先执行以下命令开启权限：
