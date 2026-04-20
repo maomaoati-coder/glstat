@@ -41,7 +41,7 @@ pkg install python numpy matplotlib
 ```
 ### 第二步：获取并进入仓库
 ```bash
-git clone https://github.com/maomaoati-coder/glstat.git
+git clone https://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@github.com/maomaoati-coder/glstat.git
 ```
 ```bash
 cd glstat
