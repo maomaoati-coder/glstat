@@ -15,15 +15,19 @@
 如果你是第一次使用，请完全按照以下指令一行一行复制执行：
 
 ### 第一步：环境初始化 (仅需执行一次)
-确保你的 Termux 已经安装了必要的依赖库：
+确保你的 Termux 已经依次安装了必要的依赖库：
 ```bash
 pkg update && pkg upgrade
+```
+```bash
 pkg install python numpy matplotlib
 
 ```
 ### 第二步：获取并进入仓库
 ```bash
-git clone [https://github.com/maomaoati-coder/glstat.git](https://github.com/maomaoati-coder/glstat.git)
+git clone https://github.com/maomaoati-coder/glstat.git
+```
+```bash
 cd glstat
 
 ```
