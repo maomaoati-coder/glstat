@@ -70,8 +70,12 @@ python scripts/check.py
 
 #### 🆘 如果图片无法保存到相册？
 如果在执行 cp 命令时提示 No such file or directory，请先执行以下命令开启权限：
- 1. **赋予存储权限**：在 Termux 输入 termux-setup-storage，然后在手机弹窗点击“允许”。
- 2. **重试保存命令**：
+1. **赋予存储权限**：
+ 在 Termux 输入
+```bash
+termux-setup-storage
+```
+2. **重试保存命令**：
    ```bash
    cp diagnosis_plot.png ~/storage/pictures/
    
