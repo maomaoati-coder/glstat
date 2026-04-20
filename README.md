@@ -10,15 +10,25 @@
 
 ---
 
+​[!CAUTION]
+<span style="color:red; font-size:1.2em;">⚠️ 绝对禁止跳步执行！</span>
+<span style="color:red;">截图中的报错是因为你没有安装 Python 和 Git。请务必【一行一行】复制以下红色加粗指令，确保终端不再提示 "not installed" 后再继续！</span>
 ## 🛠️ 傻瓜式实操流程 (Step-by-Step SOP)
 
 如果你是第一次使用，请完全按照以下指令一行一行复制执行：
 
-### 第一步：环境初始化 (仅需执行一次)
+### 第一步：强制初始化环境（解决所有 "not installed" 报错）
+​这一步最关键！请一行一行复制，如果提示 [Y/n]，请输入 y 并回车。
 确保你的 Termux 已经依次安装了必要的依赖库：
+1.更新系统源：
 ```bash
-pkg update && pkg upgrade
+pkg update && pkg upgrade -y
 ```
+2.安装核心引擎 (Git 与 Python)：
+```bash
+pkg install git python -y
+```
+3.安装数学运算库 (NumPy 与 Matplotlib)：
 ```bash
 pkg install python numpy matplotlib
 
@@ -32,7 +42,7 @@ cd glstat
 
 ```
 ### 第三步：一键运行诊断 (核心步骤)
-**注意**：脚本已锁定 data/example_glstat 作为默认演示数据。小白**无需**移动任何文件，直接运行：
+**注意**：脚本已锁定 data/example_glstat 作为默认演示数据。**无需**移动任何文件，直接运行：
 ```bash
 python scripts/check.py
 
