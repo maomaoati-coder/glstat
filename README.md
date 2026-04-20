@@ -41,7 +41,7 @@ pkg install python numpy matplotlib
 ```
 ### 第二步：获取并进入仓库
 ```bash
-git clone https://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@github.com/maomaoati-coder/glstat.git
+git clone https://github.com/maomaoati-coder/glstat.git
 ```
 ```bash
 cd glstat
@@ -67,6 +67,17 @@ python scripts/check.py
    cp diagnosis_plot.png /storage/emulated/0/Pictures/
    
    ```
+
+#### 🆘 如果图片无法保存到相册？
+如果在执行 cp 命令时提示 No such file or directory，请先执行以下命令开启权限：
+ 1. **赋予存储权限**：在 Termux 输入 termux-setup-storage，然后在手机弹窗点击“允许”。
+ 2. **重试保存命令**：
+   ```bash
+   cp diagnosis_plot.png ~/storage/pictures/
+   
+   ```
+
+
 ## 📂 进阶：如何校验你自己的数据？
 如果你有真实的客户数据需要验证：
  1. 把你的 glstat 文件重命名为 glstat。
