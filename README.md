@@ -25,6 +25,7 @@
 ### 第一步：强制初始化环境（解决所有 "not installed" 报错）
 ​这一步最关键！请一行一行复制，如果提示 [Y/n]，请输入 y 并回车。
 确保你的 Termux 已经依次安装了必要的依赖库：
+
 1.更新系统源：
 ```bash
 pkg update && pkg upgrade -y
